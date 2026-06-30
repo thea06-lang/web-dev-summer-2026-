@@ -501,7 +501,6 @@ body {
     background-color: rgba(175, 77, 77, 0.5);
     border-radius: 5px;
     padding: 8px;
-<<<<<<< HEAD
     transition: all 0.3s ease;
   }
   .btn-third:hover {
@@ -509,10 +508,6 @@ body {
     background-color: #790002;
   }
 }
-=======
-  }
-}  
->>>>>>> 6d0bfcd4007ed13efd7fc21684749cc04a0692f7
 
 .footer {
   display: flex;
