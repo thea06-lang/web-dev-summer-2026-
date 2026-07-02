@@ -1,0 +1,408 @@
+/* =====================
+   SHOP HERO
+   ===================== */
+
+.shop-hero {
+    background-color: rgba(71, 33, 4, 0.85);
+    padding: 28px 60px 32px;
+}
+
+.shop-hero .section-label {
+    color: rgba(214, 178, 92, 0.6);
+}
+
+.shop-hero-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.shop-hero h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 8px 0 0;
+    color: #f5ebd3;
+}
+
+.shop-hero h1 em {
+    font-style: italic;
+    color: #d6b25c;
+}
+
+.product-count {
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    color: rgba(214, 178, 92, 0.55);
+}
+
+/* =====================
+   EXPLORE BY REGION
+   ===================== */
+
+.explore-region {
+    background-image: linear-gradient(rgba(214, 178, 92, 0.25), rgba(214, 178, 92, 0.25)), url('assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 60px;
+}
+
+.explore-region h2 {
+    font-family: "IM Fell DW Pica", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin: 10px 0 30px;
+}
+
+.explore-region h2 em {
+    font-style: italic;
+    color: #AF4D4D;
+}
+
+.region-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.map-wrapper {
+    flex: 0 0 auto;
+}
+
+.map-image-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.map-image-container > img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+/* =====================
+   MAP PINS
+   ===================== */
+
+.map-pins {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.map-pin {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    pointer-events: auto;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.map-pin:hover {
+    z-index: 50;
+}
+
+.pin-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    color: rgba(71, 33, 4, 0.5);
+    filter: drop-shadow(0 5px 5px rgba(66, 42, 1, 0.45));
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.map-pin:hover .pin-icon {
+    transform: scale(1.25) translateY(-2px);
+    color: rgba(71, 33, 4, 1);
+}
+
+/* Pin hover card */
+.pin-card {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    width: 120px;
+    background: #2c1200;
+    border: 1px solid rgba(201, 169, 106, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.5s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    z-index: 100;
+}
+
+.map-pin:hover .pin-card {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.pin-card img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.pin-card-info {
+    padding: 8px 10px 10px;
+}
+
+.pin-card-info h4 {
+    font-family: "IM FELL DW Pica", serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    color: #f5ebd3;
+    margin: 0 0 3px;
+}
+
+.pin-card-info p {
+    font-family: "Inria Serif", serif;
+    font-size: 11px;
+    color: rgba(214, 178, 92, 0.8);
+    margin: 0;
+}
+
+/* Card below pin — for pins near the top of the map */
+.pin-card--below {
+    bottom: auto;
+    top: calc(100% + 8px);
+    transform: translateX(-50%) translateY(-6px);
+}
+
+.map-pin:hover .pin-card--below {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Card to the right — for pins near the left edge */
+.pin-card--right {
+    bottom: auto;
+    top: 50%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%) translateX(6px);
+}
+
+.map-pin:hover .pin-card--right {
+    transform: translateY(-50%) translateX(0);
+}
+
+.map-caption {
+    font-family: "Inria Serif", serif;
+    font-size: 20px;
+    color: #AF4D4D;
+    text-align: center;
+    margin: 8px 0 0;
+}
+
+.region-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.region-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background-color: rgba(245, 235, 211, 0.85);
+    border: 1px solid #c9a96a;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.region-link:hover {
+    background-color: rgba(231, 213, 157, 0.5);
+    border: 1px solid #472104;
+    box-shadow: 0 6px 20px rgba(71, 33, 4, 0.22);
+}
+
+.region-link:hover .region-arrow {
+    color: #723200;
+}
+
+.region-link:hover h3 {
+    text-shadow: 1px 2px 8px rgba(71, 33, 4, 0.25);
+}
+
+.region-link h3 {
+    font-family: "Inria Serif", serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #000000;
+    margin: 0 0 3px;
+}
+
+.region-link p {
+    font-family: "Inria Serif", serif;
+    font-size: 15px;
+    color: #723200;
+    margin: 0;
+}
+
+.region-arrow {
+    font-size: 30px;
+    color: #c9a96a;
+    flex-shrink: 0;
+    margin-left: 16px;
+    transition: color 0.2s ease;
+}
+
+
+/* =====================
+   PRODUCT COLLECTION
+   ===================== */
+
+.product-collection {
+    display: none;
+    padding: 50px 60px;
+    background-color: #faf7f0;
+}
+
+.product-collection.active {
+    display: block;
+    animation: collectionFadeIn 0.35s ease;
+    box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.1), 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes collectionFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.product-collection.alt-bg {
+    background-color: #f5ebd3;
+}
+
+.collection-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    gap: 20px;
+}
+
+.collection-header h2 {
+    font-family: "IM Fell DW Pica", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin: 8px 0 0;
+    white-space: nowrap;
+}
+
+.collection-header h2 em {
+    font-style: italic;
+    color: #AF4D4D;
+}
+
+/* =====================
+   FILTER TABS
+   ===================== */
+
+.filter-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: 1px solid #c9a96a;
+    background-color: transparent;
+    color: #472104;
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #472104;
+    color: #f5ebd3;
+    border-color: #472104;
+}
+
+/* =====================
+   SHOP PRODUCT GRID
+   ===================== */
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.shop-product-card {
+    background-color: #fff;
+    border: 1px solid #e0d5bf;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.shop-product-card:hover {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+    transform: translateY(-3px);
+}
+
+.shop-product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.shop-product-info {
+    padding: 14px 16px 16px;
+    font-family: "Inria Serif", serif;
+}
+
+.shop-product-info h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: #1a1a1a;
+}
+
+.shop-product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.add-btn {
+    padding: 8px 18px;
+    background-color: #472104;
+    color: #f5ebd3;
+    border: none;
+    border-radius: 4px;
+    font-family: "Inria Serif", serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+    background-color: #6b3208;
+}

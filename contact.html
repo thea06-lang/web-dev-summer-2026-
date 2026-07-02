@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Srok Sovenirs</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+    </head>
+
+
+  <body>
+    <div class="page">
+         <!--Navbar-->
+        <nav class="navbar">
+            <div class="logo-wrapper">
+                <span class="logo">Srok Souvenirs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+     <!--Hero Section-->
+      <section class="hero">
+        <div class="eyebrow">Get in touch</div>
+        <h1>Order or <em>Inquire</em></h1>
+        <p>Have a question about a product or want to place a custom order? We'd love to hear from you.</p>
+      </section>
+
+      <div class="content">
+
+      <div class="form-card">
+      <div class="form-eyebrow">Send us a message</div>
+      <h2>Place an <em>Order</em></h2>
+
+      <form>
+        <div class="row">
+          <div class="field">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="e.g. Sophea Chan">
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+855 xx xxx xxx">
+          </div>
+          <div class="field">
+            <label for="country">Country</label>
+            <input type="text" id="country" value="Cambodia">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="product">Product Interest</label>
+          <select id="product">
+            <option>Select a category</option>
+            <option>Aroma Scarf</option>
+            <option>Cambodian Silk</option>
+            <option>Kampot Pepper</option>
+            <option>Beeswax</option>
+            <option>Baskets</option>
+            <option>Organic Soap</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>I am interested in</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="interest" value="Aroma Scarf"> Aroma Scarf</label>
+            <label><input type="checkbox" name="interest" value="Cambodian Silk"> Cambodian Silk</label>
+            <label><input type="checkbox" name="interest" value="Kampot Pepper"> Kampot Pepper</label>
+            <label><input type="checkbox" name="interest" value="Beeswax"> Beeswax</label>
+            <label><input type="checkbox" name="interest" value="Baskets"> Baskets</label>
+            <label><input type="checkbox" name="interest" value="Organic Soap"> Organic Soap</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Tell us about your order, quantity, or any special requests..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Inquiry</button>
+      </form>
+    </div>
+
+    <div class="sidebar">
+      <div class="info-card">
+        <h3><span class="dot"></span> Shop Hours</h3>
+        <div class="hours-row"><span>Monday – Friday</span><span>9:00 AM – 6:00 PM</span></div>
+        <div class="hours-row"><span>Saturday</span><span>10:00 AM – 4:00 PM</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+        <div class="hours-row"><span>Public Holidays</span><span>Closed</span></div>
+      </div>
+
+      <div class="info-card">
+        <h3><span class="dot"></span> Reach Us</h3>
+        <div class="reach-row"><span class="ico">&#9993;</span><span class="txt">hello@sroksouvenirs.com</span></div>
+        <div class="reach-row"><span class="ico">&#9742;</span><span class="txt">+855 12 345 678</span></div>
+        <div class="reach-row"><span class="ico">&#8982;</span><span class="txt">Phnom Penh, Cambodia</span></div>
+      </div>
+
+      <div class="info-card">
+        <h3><span class="dot"></span> Delivery Info</h3>
+        <table class="delivery">
+          <thead>
+            <tr><th>Destination</th><th>Estimated Time</th><th>Fee</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Within Phnom Penh</td><td>1–2 days</td><td>Free</td></tr>
+            <tr><td>Cambodia (domestic)</td><td>3–5 days</td><td>$3.00</td></tr>
+            <tr><td>Southeast Asia</td><td>7–10 days</td><td>$10.00</td></tr>
+            <tr><td>Worldwide</td><td>14–21 days</td><td>$25.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+  </body>
+
+  <footer class="footer">
+    <div class="footer-logo">Srok Sovenirs</div>
+    <p class="footer-copy">@2026 Srok Souvenirs. All rights reserved</p>
+      <ul class="footer-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </footer>
+</html>
