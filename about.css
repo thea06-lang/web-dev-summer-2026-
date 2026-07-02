@@ -1,0 +1,109 @@
+@import url(style.css);
+
+.section-starter {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+  color:#DEBA67;
+}
+
+.our-story {
+  background-color: rgba(71, 33, 4, 0.8);
+  padding: 40px 60px;
+}
+
+.our-story-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 350px;
+}
+
+.our-story-text {
+  max-width: 580px;
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    white-space: nowrap; 
+    em {
+      font-style: italic;
+      color: #d6b25c;
+      font-weight: 400;
+    } 
+  }
+    p {
+    font-family: "Inria serif", serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #E4B649;
+  }
+}
+
+.our-story-content img {
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: -20px 60px -20px -50px;
+  align-self: flex-start;
+}
+
+.our-mission {
+  padding: 40px 60px;
+  .section-starter {
+    color: rgba(71, 33, 4, 0.8);
+  }
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.mission-card {
+  font-family:"Inria serif", serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #472104;
+  border-radius: 15px;
+  padding: 20px 30px 65px;
+  min-height: 210px;
+
+  .mission-title {
+    color: #FFB300;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(214, 178, 92, 0.8);
+    max-width: 90%;
+  }
+
+  .mission-ring {
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #d6b25c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+      filter: invert(70%) sepia(50%) saturate(400%) hue-rotate(1deg) brightness(95%);
+    }
+  }
+}
