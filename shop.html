@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shop — Srok Souvenirs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="shop.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <div class="logo-wrapper">
+                <span class="logo">Srok Souvenirs</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Shop Hero-->
+        <section class="shop-hero">
+            <span class="section-label">Browse Your Collection</span>
+            <div class="shop-hero-row">
+                <h1>The <em>Shop</em></h1>
+                <span class="product-count">48 products available</span>
+            </div>
+        </section>
+
+        <!--Explore by Region-->
+        <section class="explore-region">
+            <span class="section-label">· Explore by Region</span>
+            <h2>Where's your souvenirs <em>from?</em></h2>
+            <div class="region-container">
+                <div class="map-wrapper">
+                    <div class="map-image-container">
+                    <img src="assets/map.jpg" alt="Map of Cambodia">
+                    <div class="map-pins">
+
+                        <!-- Siem Reap — upper left -->
+                        <a href="#siem-reap" class="map-pin" style="left:28%;top:28%;">
+                            <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 21 9 21s9-14.25 9-21C21 4.03 16.97 0 12 0z" fill="currentColor"/><circle cx="12" cy="9" r="3.5" fill="rgba(255,255,255,0.6)"/></svg>
+                            <div class="pin-card pin-card--below">
+                                <img src="assets/angkorwat.jpg" alt="Siem Reap">
+                                <div class="pin-card-info">
+                                    <h4>Siem Reap</h4>
+                                    <p>Silk · Sculptures · Krama</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Battambang — left edge -->
+                        <a href="#battambang" class="map-pin" style="left:15%;top:32%;">
+                            <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 21 9 21s9-14.25 9-21C21 4.03 16.97 0 12 0z" fill="currentColor"/><circle cx="12" cy="9" r="3.5" fill="rgba(255,255,255,0.6)"/></svg>
+                            <div class="pin-card pin-card--right">
+                                <img src="assets/bb.jpg" alt="Battambang">
+                                <div class="pin-card-info">
+                                    <h4>Battambang</h4>
+                                    <p>Basketry · Woven Mats · Bamboo</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Phnom Penh — center -->
+                        <a href="#phnom-penh" class="map-pin" style="left:47%;top:63%;">
+                            <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 21 9 21s9-14.25 9-21C21 4.03 16.97 0 12 0z" fill="currentColor"/><circle cx="12" cy="9" r="3.5" fill="rgba(255,255,255,0.6)"/></svg>
+                            <div class="pin-card">
+                                <img src="assets/pp.jpg" alt="Phnom Penh">
+                                <div class="pin-card-info">
+                                    <h4>Phnom Penh</h4>
+                                    <p>Jewelry · Accessories · Textiles</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Kratie — right side -->
+                        <a href="#kratie" class="map-pin" style="left:69.5%;top:46%;">
+                            <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 21 9 21s9-14.25 9-21C21 4.03 16.97 0 12 0z" fill="currentColor"/><circle cx="12" cy="9" r="3.5" fill="rgba(255,255,255,0.6)"/></svg>
+                            <div class="pin-card">
+                                <img src="assets/Kratie.webp" alt="Kratie">
+                                <div class="pin-card-info">
+                                    <h4>Kratie</h4>
+                                    <p>Wellness · Natural Oils · Herbs</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Kampot — bottom -->
+                        <a href="#kampot" class="map-pin" style="left:34%;top:81%;">
+                            <svg class="pin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36"><path d="M12 0C7.03 0 3 4.03 3 9c0 6.75 9 21 9 21s9-14.25 9-21C21 4.03 16.97 0 12 0z" fill="currentColor"/><circle cx="12" cy="9" r="3.5" fill="rgba(255,255,255,0.6)"/></svg>
+                            <div class="pin-card">
+                                <img src="assets/kp.jpg" alt="Kampot">
+                                <div class="pin-card-info">
+                                    <h4>Kampot</h4>
+                                    <p>Pepper · Palm Sugar · Soaps</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    </div><!-- end map-image-container -->
+                    <p class="map-caption">Click on the map to explore ↑</p>
+                </div>
+                <div class="region-links">
+                    <a href="#phnom-penh" class="region-link">
+                        <div>
+                            <h3>Phnom Penh</h3>
+                            <p>Jewelry, Upcycled Accessories, Textiles</p>
+                        </div>
+                        <span class="region-arrow">⇒</span>
+                    </a>
+                    <a href="#siem-reap" class="region-link">
+                        <div>
+                            <h3>Siem Reap</h3>
+                            <p>Silk, Sculptures, Krama, Silverware</p>
+                        </div>
+                        <span class="region-arrow">⇒</span>
+                    </a>
+                    <a href="#kampot" class="region-link">
+                        <div>
+                            <h3>Kampot</h3>
+                            <p>Kampot Pepper, Palm sugar, Organic Soaps</p>
+                        </div>
+                        <span class="region-arrow">⇒</span>
+                    </a>
+                    <a href="#battambang" class="region-link">
+                        <div>
+                            <h3>Battambang</h3>
+                            <p>Basketry, Woven Mats, Bamboo Crafts</p>
+                        </div>
+                        <span class="region-arrow">⇒</span>
+                    </a>
+                    <a href="#kratie" class="region-link">
+                        <div>
+                            <h3>Kratie</h3>
+                            <p>Wellness Products, Natural Oils, Herbs</p>
+                        </div>
+                        <span class="region-arrow">⇒</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Phnom Penh Collection-->
+        <section class="product-collection" id="phnom-penh">
+            <span class="section-label">Phnom Penh Collection</span>
+            <div class="collection-header">
+                <h2>Jewelry &amp; <em>Accessories</em></h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Jewelry</button>
+                    <button class="filter-btn">Upcycled Accessories</button>
+                    <button class="filter-btn">Textiles</button>
+                </div>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-product-card">
+                    <img src="assets/krama.jpg" alt="Krama Scarf">
+                    <div class="shop-product-info">
+                        <h3>Krama Scarf</h3>
+                        <p class="product-origin">Phnom Penh</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">20,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/rings.jpg" alt="Enameled Bangles">
+                    <div class="shop-product-info">
+                        <h3>Enameled Bangles</h3>
+                        <p class="product-origin">Phnom Penh</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">10,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/bags.jpg" alt="Handmade Pouch Bag">
+                    <div class="shop-product-info">
+                        <h3>Handmade Pouch Bag</h3>
+                        <p class="product-origin">Phnom Penh</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">15,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/krama.jpg" alt="Krama Scarf">
+                    <div class="shop-product-info">
+                        <h3>Krama Scarf</h3>
+                        <p class="product-origin">Phnom Penh</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">20,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/rings.jpg" alt="Enameled Bangles">
+                    <div class="shop-product-info">
+                        <h3>Enameled Bangles</h3>
+                        <p class="product-origin">Phnom Penh</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">10,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/bags.jpg" alt="Handmade Pouch Bag">
+                    <div class="shop-product-info">
+                        <h3>Handmade Pouch Bag</h3>
+                        <p class="product-origin">Phnom Penh</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">15,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Siem Reap Collection-->
+        <section class="product-collection alt-bg" id="siem-reap">
+            <span class="section-label">Siem Reap Collection</span>
+            <div class="collection-header">
+                <h2>Silk &amp; <em>Sculptures</em></h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Silk</button>
+                    <button class="filter-btn">Sculptures</button>
+                    <button class="filter-btn">Silverware</button>
+                </div>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-product-card">
+                    <img src="assets/silk.jpg" alt="Silk">
+                    <div class="shop-product-info">
+                        <h3>Silk</h3>
+                        <p class="product-origin">Siem Reap</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">35,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/status.webp" alt="Stone Sculpture">
+                    <div class="shop-product-info">
+                        <h3>Stone Sculpture</h3>
+                        <p class="product-origin">Siem Reap</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">80,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/krama.jpg" alt="Krama Scarf">
+                    <div class="shop-product-info">
+                        <h3>Krama Scarf</h3>
+                        <p class="product-origin">Siem Reap</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">18,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/silverware.jpg" alt="Silverware">
+                    <div class="shop-product-info">
+                        <h3>Silverware</h3>
+                        <p class="product-origin">Siem Reap</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">55,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/painting.jpg" alt="Angkor Painting">
+                    <div class="shop-product-info">
+                        <h3>Angkor Painting</h3>
+                        <p class="product-origin">Siem Reap</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">45,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/angkorreplica.jpg" alt="Angkor Replica">
+                    <div class="shop-product-info">
+                        <h3>Angkor Replica</h3>
+                        <p class="product-origin">Siem Reap</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">120,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Kampot Collection-->
+        <section class="product-collection" id="kampot">
+            <span class="section-label">Kampot Collection</span>
+            <div class="collection-header">
+                <h2>Pepper &amp; <em>Organic Soaps</em></h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Kampot Pepper</button>
+                    <button class="filter-btn">Palm Sugar</button>
+                    <button class="filter-btn">Organic Soaps</button>
+                </div>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-product-card">
+                    <img src="assets/edibles.png" alt="Kampot Pepper Set">
+                    <div class="shop-product-info">
+                        <h3>Kampot Pepper Set</h3>
+                        <p class="product-origin">Kampot</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">40,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/edibles.png" alt="Palm Sugar Block">
+                    <div class="shop-product-info">
+                        <h3>Palm Sugar Block</h3>
+                        <p class="product-origin">Kampot</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">15,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/wellness.png" alt="Organic Soap Bar">
+                    <div class="shop-product-info">
+                        <h3>Organic Soap Bar</h3>
+                        <p class="product-origin">Kampot</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">8,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/edibles.png" alt="Pepper Gift Box">
+                    <div class="shop-product-info">
+                        <h3>Pepper Gift Box</h3>
+                        <p class="product-origin">Kampot</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">55,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/wellness.png" alt="Lemongrass Soap">
+                    <div class="shop-product-info">
+                        <h3>Lemongrass Soap</h3>
+                        <p class="product-origin">Kampot</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">10,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/edibles.png" alt="Palm Sugar Syrup">
+                    <div class="shop-product-info">
+                        <h3>Palm Sugar Syrup</h3>
+                        <p class="product-origin">Kampot</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">20,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Battambang Collection-->
+        <section class="product-collection alt-bg" id="battambang">
+            <span class="section-label">Battambang Collection</span>
+            <div class="collection-header">
+                <h2>Woven Mats &amp; <em>Bamboo Crafts</em></h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Basketry</button>
+                    <button class="filter-btn">Woven Mats</button>
+                    <button class="filter-btn">Bamboo Crafts</button>
+                </div>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-product-card">
+                    <img src="assets/handcraft.png" alt="Woven Basket">
+                    <div class="shop-product-info">
+                        <h3>Woven Basket</h3>
+                        <p class="product-origin">Battambang</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">25,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/krama.jpg" alt="Woven Mat">
+                    <div class="shop-product-info">
+                        <h3>Woven Mat</h3>
+                        <p class="product-origin">Battambang</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">30,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/crafts.png" alt="Bamboo Wind Chime">
+                    <div class="shop-product-info">
+                        <h3>Bamboo Wind Chime</h3>
+                        <p class="product-origin">Battambang</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">12,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/handcraft.png" alt="Rattan Tray">
+                    <div class="shop-product-info">
+                        <h3>Rattan Tray</h3>
+                        <p class="product-origin">Battambang</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">22,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/handcraft.png" alt="Bamboo Lantern">
+                    <div class="shop-product-info">
+                        <h3>Bamboo Lantern</h3>
+                        <p class="product-origin">Battambang</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">18,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/crafts.png" alt="Woven Wall Art">
+                    <div class="shop-product-info">
+                        <h3>Woven Wall Art</h3>
+                        <p class="product-origin">Battambang</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">35,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Kratie Collection-->
+        <section class="product-collection" id="kratie">
+            <span class="section-label">Kratie Collection</span>
+            <div class="collection-header">
+                <h2>Wellness &amp; <em>Natural Oils</em></h2>
+                <div class="filter-tabs">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Wellness Products</button>
+                    <button class="filter-btn">Natural Oils</button>
+                    <button class="filter-btn">Herbs</button>
+                </div>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-product-card">
+                    <img src="assets/wellness.png" alt="Lemongrass Essential Oil">
+                    <div class="shop-product-info">
+                        <h3>Lemongrass Essential Oil</h3>
+                        <p class="product-origin">Kratie</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">22,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/edibles.png" alt="Dried Herb Mix">
+                    <div class="shop-product-info">
+                        <h3>Dried Herb Mix</h3>
+                        <p class="product-origin">Kratie</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">18,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/wellness.png" alt="Coconut Hair Oil">
+                    <div class="shop-product-info">
+                        <h3>Coconut Hair Oil</h3>
+                        <p class="product-origin">Kratie</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">14,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/wellness.png" alt="Herbal Bath Salt">
+                    <div class="shop-product-info">
+                        <h3>Herbal Bath Salt</h3>
+                        <p class="product-origin">Kratie</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">16,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/edibles.png" alt="Dried River Herbs">
+                    <div class="shop-product-info">
+                        <h3>Dried River Herbs</h3>
+                        <p class="product-origin">Kratie</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">12,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-product-card">
+                    <img src="assets/wellness.png" alt="Jasmine Body Oil">
+                    <div class="shop-product-info">
+                        <h3>Jasmine Body Oil</h3>
+                        <p class="product-origin">Kratie</p>
+                        <div class="shop-product-footer">
+                            <span class="product-price">25,000 Riels</span>
+                            <button class="add-btn">+ Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-logo">Srok Sovenirs</div>
+            <p class="footer-copy">@2026 Srok Souvenirs. All rights reserved</p>
+            <ul class="footer-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var collections = document.querySelectorAll('.product-collection');
+                var triggers = document.querySelectorAll('.map-pin, .region-link');
+
+                triggers.forEach(function (trigger) {
+                    trigger.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        var targetId = this.getAttribute('href').replace('#', '');
+                        var target = document.getElementById(targetId);
+
+                        // Hide all collections
+                        collections.forEach(function (c) {
+                            c.classList.remove('active');
+                        });
+
+                        // Show only the selected one and scroll to it
+                        if (target) {
+                            target.classList.add('active');
+                            setTimeout(function () {
+                                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 50);
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
