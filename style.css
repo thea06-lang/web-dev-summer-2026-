@@ -151,7 +151,7 @@
 body {
   margin: 0;
   padding-top: 70px;
-  background-color: #f5ebd3;
+  background-image: url("assets/bg.jpg");
   font-family: "Instrument Serif", serif;
 }
 
@@ -526,7 +526,3 @@ body {
     font-size: 14px;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 6d0bfcd4007ed13efd7fc21684749cc04a0692f7
