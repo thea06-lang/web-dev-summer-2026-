@@ -1,5 +1,12 @@
 @import url(style.css);
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
 .section-starter {
   font-size: 20px;
   text-transform: uppercase;
@@ -16,11 +23,16 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 350px;
+  gap: 75px;            
+  img {
+    margin-left: 0; 
+    margin-top: -20px;
+    filter: drop-shadow(0 5px 5px rgba(66,42,1,0.8));
+  }
 }
 
 .our-story-text {
-  max-width: 580px;
+  max-width: 900px;       
   h1 {
     font-size: 3rem;
     font-weight: 500;
@@ -28,27 +40,18 @@
     line-height: 1.1;
     margin-top: 10px;
     margin-bottom: 20px;
-    white-space: nowrap; 
     em {
       font-style: italic;
       color: #d6b25c;
       font-weight: 400;
-    } 
+    }
   }
-    p {
+  p {
     font-family: "Inria serif", serif;
     font-size: 1.1rem;
     line-height: 1.7;
     color: #E4B649;
   }
-}
-
-.our-story-content img {
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  margin: -20px 60px -20px -50px;
-  align-self: flex-start;
 }
 
 .our-mission {
@@ -76,6 +79,7 @@
 
   .mission-title {
     color: #FFB300;
+    text-transform: capitalize;
     font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 5px;
@@ -106,4 +110,8 @@
       filter: invert(70%) sepia(50%) saturate(400%) hue-rotate(1deg) brightness(95%);
     }
   }
+}
+
+.footer {
+  margin-top: auto;
 }
