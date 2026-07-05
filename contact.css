@@ -1,6 +1,25 @@
 @import url(style.css);
 /* CONTACT PAGE STYLES */
+/* the row that holds form-card + sidebar */
+.content {
+  display: flex;
+  gap: 30px;
+  flex: 1 0 auto;      /* ← makes this row absorb leftover vertical space */
+  align-items: flex-start;
+}
 
+/* top-level page wrapper: header, hero, content, footer all live inside this */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+.hero,
+footer {
+  flex: 0 0 auto;      /* these keep their natural height, never stretch */
+}
 .form-card {
   flex: 1;
   background-color: rgba(212, 197, 160, 0.3);
