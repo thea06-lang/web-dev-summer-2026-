@@ -576,25 +576,31 @@
             </ul>
         </footer>
         <script>
+            // Wait until the full HTML page has loaded before running any script
             document.addEventListener('DOMContentLoaded', function () {
+
+                // Select all product collection sections and all clickable triggers (map pins + region links)
                 var collections = document.querySelectorAll('.product-collection');
                 var triggers = document.querySelectorAll('.map-pin, .region-link');
 
+                // Attach a click listener to every trigger
                 triggers.forEach(function (trigger) {
                     trigger.addEventListener('click', function (e) {
-                        e.preventDefault();
+                        e.preventDefault(); // Stop the browser from jumping to the anchor (#id) by default
 
+                        // Read the href value (e.g. "#phnom-penh") and strip the "#" to get the section id
                         var targetId = this.getAttribute('href').replace('#', '');
                         var target = document.getElementById(targetId);
 
-                        // Hide all collections
+                        // Hide all collections by removing the "active" class from each
                         collections.forEach(function (c) {
                             c.classList.remove('active');
                         });
 
-                        // Show only the selected one and scroll to it
+                        // Show only the clicked region's collection and smoothly scroll to it
                         if (target) {
                             target.classList.add('active');
+                            // Small delay (50ms) so the section is visible before scrollIntoView fires
                             setTimeout(function () {
                                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                             }, 50);
