@@ -282,9 +282,11 @@
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.1), 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
+/* Fade-in animation for when a collection section becomes active:
+   starts invisible and 10px lower, then rises up and fades in to full opacity */
 @keyframes collectionFadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(10px); } /* hidden, shifted down */
+    to   { opacity: 1; transform: translateY(0); }    /* fully visible, original position */
 }
 
 .product-collection.alt-bg {
