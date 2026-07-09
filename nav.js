@@ -1,5 +1,5 @@
-// Mobile nav toggle: below 768px, style.css hides .nav-links until it has
-// the "open" class (see the max-width: 768px media query).
+// Mobile nav toggle: below 600px, style.css hides .nav-links until it has
+// the "open" class (see the max-width: 600px media query).
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const navLinks = document.querySelector('.nav-links');
 
