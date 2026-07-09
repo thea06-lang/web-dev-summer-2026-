@@ -59,6 +59,9 @@ body {
   .section-starter {
     color: rgba(71, 33, 4, 0.8);
   }
+  em {
+    color: #AF4D4D;
+  }
 }
 
 .mission-grid {
