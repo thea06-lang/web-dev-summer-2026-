@@ -439,9 +439,14 @@
 
     .region-container {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .map-wrapper {
+        width: 100%;
+    }
+
+    .region-links {
         width: 100%;
     }
 
@@ -458,6 +463,7 @@
 
     .product-collection {
         padding: 30px 20px;
+    
     }
 
     .collection-header {
