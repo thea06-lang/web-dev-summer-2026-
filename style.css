@@ -536,22 +536,3 @@ body {
     font-size: 14px;
   }
 }
-
-
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    flex: 1;
-  }
-
-  .row {
-    grid-template-columns: 1fr;
-  }
-
-  .checks {
-    grid-template-columns: 1fr;
-  }
-}

@@ -296,3 +296,22 @@ input[type="checkbox"] {
   color: #d4c5a0;
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .checks {
+    grid-template-columns: 1fr;
+  }
+}
