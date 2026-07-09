@@ -115,3 +115,9 @@ body {
 .footer {
   margin-top: auto;
 }
+
+@media (max-width: 600px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}
