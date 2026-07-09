@@ -15,7 +15,6 @@
   flex-direction: column;
 }
 
-header,
 .hero,
 footer {
   flex: 0 0 auto;      /* these keep their natural height, never stretch */
