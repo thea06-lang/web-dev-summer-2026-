@@ -297,8 +297,19 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+  }
+
   .content {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .form-card,
+  .sidebar {
+    width: 100%;
+    text-align: center;
   }
 
   .sidebar {
@@ -312,5 +323,31 @@ input[type="checkbox"] {
 
   .checks {
     grid-template-columns: 1fr;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  .checks label {
+    justify-content: center;
+  }
+
+  .info-card h3 {
+    justify-content: center;
+  }
+
+  .hours-row {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .reach-row {
+    justify-content: center;
+  }
+
+  .delivery th,
+  .delivery td {
+    text-align: center;
   }
 }

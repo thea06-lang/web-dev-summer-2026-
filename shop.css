@@ -409,3 +409,74 @@
 .add-btn:hover {
     background-color: #6b3208;
 }
+
+/* =====================
+   RESPONSIVE — MOBILE (≤600px)
+   ===================== */
+
+@media (max-width: 600px) {
+    .shop-hero {
+        padding: 20px 20px 24px;
+    }
+
+    .shop-hero-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .shop-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .explore-region {
+        padding: 30px 20px;
+    }
+
+    .explore-region h2 {
+        font-size: 1.8rem;
+    }
+
+    .region-container {
+        flex-direction: column;
+    }
+
+    .map-wrapper {
+        width: 100%;
+    }
+
+    .map-image-container {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .map-image-container > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-collection {
+        padding: 30px 20px;
+    }
+
+    .collection-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .collection-header h2 {
+        white-space: normal;
+        font-size: 1.8rem;
+    }
+
+    .filter-tabs {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+}
