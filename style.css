@@ -498,7 +498,6 @@ body {
   .hamburger {
     display: flex;
   }
-
   .nav-links {
     position: absolute;
     top: 70px;
@@ -513,26 +512,21 @@ body {
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
-
   .nav-links.open {
     max-height: 300px;
   }
-
   .nav-links li a {
     height: auto;
     padding: 16px 28px;
   }
-
   .products-grid {
     flex-direction: column;
   }
-
   .value-bar {
     flex-direction: column;
     gap: 24px;
     align-items: stretch;
   }
-
   .value-item {
     flex-direction: row;
     align-items: center;
@@ -545,10 +539,9 @@ body {
       flex-shrink: 0;
   }
 }
-
-.value-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
+  .value-text {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+  }
 }
